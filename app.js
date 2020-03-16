@@ -85,7 +85,7 @@ function countryName(searchOrClick) {
     fetch(`https://restcountries.eu/rest/v2/${searchOrClick}`)
         .then((res) => {
             if (res.status === 404) {
-                homepage.innerHTML = ` <span  class="back" style="position:relative;left:100px"><img src="back.png" height=20px>Back</span><div style="font-size:30px; font-weight:600px; text-align:center;">No Results Found</div>`
+                homepage.innerHTML = `<div style="font-size:30px; font-weight:600px; text-align:center;">No Results Found</div>`
                 country.insertAdjacentElement('beforeend', countryInject)
                 
                 return res.status
