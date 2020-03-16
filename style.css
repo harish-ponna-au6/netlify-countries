@@ -1,0 +1,177 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------homepage------------------ */
+
+.nav{
+    height: 50px;
+    background-color: rgb(238, 229, 214) ;
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
+.nav-left{
+    float: left;
+    margin:15px 50px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.nav-right{
+    float: right;
+    margin: 12px 50px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border:solid gray 2px;
+    padding: 3px 5px;
+    height: 17px;
+}
+
+.nav-right img{
+    margin-right: 10px;
+}
+
+
+.nav-right:hover{
+    background-color: yellow;
+}
+
+.homepage{
+    position: relative;
+    width: 1200px;
+    margin: 25px auto;
+}
+input{
+    height: 25px;
+    width: 400px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: darkmagenta;
+    font-weight: 600;
+    border: darkmagenta solid 2px;
+    outline: none;
+    background-color: transparent;
+}
+input:focus{
+    border: darkorange solid 2px;
+}
+
+.homepage .s-img{
+    position: absolute;
+    z-index: 1;
+    height: 22px;
+    left: 375px;
+    top: 3px;
+}
+.card{
+    display: inline-block;
+    margin:30px 50px 30px 0;
+    background-color: rgb(238, 229, 214) ;
+}
+
+.card .flag img{
+    cursor: pointer;
+}
+.top{
+    border: 2px solid black;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+/* ---------------------country---------------- */
+
+.back{
+    padding: 3px 3px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    top:30px;
+    left:-150px;
+    box-shadow: 0 0 2px;
+}
+.back img{
+    position: relative;
+    top:4px;
+    margin-right:8px ;
+}
+
+.country-card{
+    position: relative;
+    height: 320px;
+    width: 1100px;
+    /* border: black solid 2px; */
+    top: 80px;
+    left:110px;
+    display: flex;
+
+}
+.country-flag{
+    height: 320px;
+    width:300px;
+    /* border: solid red 3px; */
+    margin-right: 150px;
+}
+.country-content{
+    /* border: solid red 3px; */
+    height: 320px;
+    width: 600px;
+    margin-left: 80px;
+
+}
+
+.title{
+    /* border: solid red 3px; */
+    margin-top:10px ;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.details{
+    display: flex;
+    font-size: 18px;
+    font-weight: 530;
+}
+
+.details1{
+    /* border: solid red 3px; */
+    height: 200px;
+    width: 300px;
+}
+
+.details2{
+    /* border: solid red 3px; */
+    height: 200px;
+    width: 300px;
+}
+
+.footer{
+    /* border: solid red 3px; */
+    height: 55px;
+    margin-top: 25px; 
+    font-size: 18px;
+    font-weight: 530;
+}
+
+#regions{
+    position: absolute;
+    top:0px;
+    right: 80px;
+}
+#filter{
+    width:200px;
+}
+
+/* --------------------------dark mode-------------------- */
+
+.dark-mode-body{
+    background-color: #222831 ;
+    color: white;
+}
+.dark-mode-others{
+    background-color: #393e46;
+    color: white;
+}
