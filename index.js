@@ -125,7 +125,7 @@ function renderCountry(responseData) {
     document.querySelector(".country").innerHTML = ''
 
     var countryInject = document.createElement('div');
-    countryInject.innerHTML = ` <button  onclick = "back()" style="background-color:rgb(238, 229, 214) ;border: solid black 1px;"
+    countryInject.innerHTML = ` <button  onclick = "back()" style="background-color:rgba(85, 86, 99, 0.46);border: solid black 1px;"
     class="btn py-1  ml-2">Back</button>
     <div class="country-card container">
                     <div class="row d-flex justify-content-around flex-wrap" >
