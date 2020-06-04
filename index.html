@@ -5,50 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countries</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
 </head>
 
-<body>
-
-    <nav class=nav id="nav">
-        <div class="nav-left">Where in the world?</div>
-        <a href="/" style="text-decoration: none;color: black;border: black solid 2px; padding: 2px 4px;position: relative;top:17px">Home</a>
-        <div class="nav-right"><img src="night.png" height="11px" alt=""><span>Dark Mode</p></div>
+<body style="background-color: #3a403f;">
+    <nav class="py-2 mb-3" style="background-color:rgba(85, 86, 99, 0.46)">
+        <a style="text-decoration: none;color: white;" href="https://countries-view.netlify.app">
+            <h5 class="ml-4" style="font-weight: 700;display: inline-block;">Where in the World?</h5>
+        </a>
+        
     </nav>
+    <div class="container-fluid">
+        <div class="row mt-2" style="position: relative;">
+            <div style="position: absolute;right: 10px;"><input id="country" class="mr-1" type="text"
+                    placeholder="Enter country name"><input style="cursor: pointer;" onclick="countrySearch()" type="button" value="search">
+            </div>
+            <div style="position: absolute;right: 10px; top:40px;">
+                <select id="region" style="width: 180px;">
+                    <option value="" disabled selected>Select any Region</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">Americas</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+                <input style="cursor: pointer;" onclick="regionSearch()" type="button" value="search">
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
 
 
-<!-- ------------------homepage---------------- -->
+        <!-- countries -->
+        <div class="container">
+            <div class="container-cards row d-flex justify-content-around">
 
+            </div>
+            <div id="pagination" class="d-flex justify-content-center text-center flex-wrap mt-5 mx-auto">
+            </div>
+            
+        </div>
 
-
-    <div class="homepage">
-        <form action="">
-        <input type="text" placeholder="Enter for a country"><img class="s-img" src="magnifying-glass.png" height="15px" alt="">
-    </form>
-    <div id="regions">
-    <input onchange="onchanged(`${value}`)" id = "filter" type="text" placeholder="Filter by Region" list="datalist">
-    <datalist id="datalist">
-        <option value="Africa">Africa</option>
-        <option value="Americas">Americas</option>
-        <option value="Asia">Asia</option>
-        <option value="Europe">Europe</option>
-        <option value="Oceania">Oceania</option>
-    </datalist>
-</div>
-        <div class="container-cards"></div>
-        <div class='top'><a href="#"><img src="arrow-up.png" height=30px></a></div>
     </div>
-    
 
-<!-- --------------------country----------------- -->
+    <!-- --------------------country----------------- -->
 
-<div class="country">
-</div>
-
+    <div class="country">
+    </div>
 
 
-    <script src="app.js"></script>
+
+    <script src="index.js"></script>
 
 </body>
 
 </html>
+
+
+
+
