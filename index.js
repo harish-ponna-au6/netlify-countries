@@ -54,6 +54,7 @@ function allCountriesPage(pageNumber) {
         document.querySelector('.container-cards').insertAdjacentElement("beforeend", pages[pageNumber][i])
     }
     document.querySelector("#region").value=""
+    document.querySelector("#anchor-scroll").click()
 }
 
 function regionSearch() {

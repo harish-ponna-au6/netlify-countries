@@ -9,9 +9,13 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
  
 </head>
-
+<style>
+    #country::placeholder{
+        color: white;
+    }
+</style>
 <body style="background-color: #3a403f;">
-    <nav class="py-2 mb-3" style="background-color:rgba(85, 86, 99, 0.46)">
+    <nav id="scroll" class="py-2 mb-3" style="background-color:rgba(85, 86, 99, 0.46)">
         <a style="text-decoration: none;color: white;" href="https://countries-view.netlify.app">
             <h5 class="ml-4" style="font-weight: 700;display: inline-block;">Where in the World?</h5>
         </a>
@@ -19,11 +23,11 @@
     </nav>
     <div class="container-fluid">
         <div class="row mt-2" style="position: relative;">
-            <div style="position: absolute;right: 10px;"><input id="country" class="mr-1" type="text"
-                    placeholder="Enter country name"><input style="cursor: pointer;" onclick="countrySearch()" type="button" value="search">
+            <div style="position: absolute;right: 10px;"><input id="country" style="background-color: rgba(85, 86, 99, 0.46);color:white;" class="mr-1" type="text"
+                    placeholder="Enter country name"><input style="cursor: pointer;background-color: rgba(85, 86, 99, 0.46);" onclick="countrySearch()" type="button" value="search">
             </div>
             <div style="position: absolute;right: 10px; top:40px;">
-                <select id="region" style="width: 180px;">
+                <select id="region" style="width: 180px;background-color: rgba(85, 86, 99, 0.46);color:white ">
                     <option value="" disabled selected>Select any Region</option>
                     <option value="Africa">Africa</option>
                     <option value="Americas">Americas</option>
@@ -31,7 +35,7 @@
                     <option value="Europe">Europe</option>
                     <option value="Oceania">Oceania</option>
                 </select>
-                <input style="cursor: pointer;" onclick="regionSearch()" type="button" value="search">
+                <input style="cursor: pointer;background-color: rgba(85, 86, 99, 0.46);" onclick="regionSearch()" type="button"  value="search">
             </div>
         </div>
 
@@ -58,7 +62,8 @@
     <div class="country">
     </div>
 
-
+    <a href="#scroll" id="anchor-scroll">
+    </a>
 
     <script src="index.js"></script>
 
